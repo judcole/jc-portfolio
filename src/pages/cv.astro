@@ -4,89 +4,136 @@ import TimeLineElement from "../components/cv/TimeLine.astro";
 ---
 
 <BaseLayout title="Resume" sideBarActiveItemID="cv">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Profile</div>
-  </div>
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Profile</div>
+    </div>
 
-  <div class="mb-10 text-justify">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-    cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-  </div>
+    <div class="mb-10 text-justify">
+        Jud Cole is an experienced technology leader, innovator and strategist who loves to solve complex
+        technical challenges and build high quality technology-based solutions.
+    </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Education</div>
-  </div>
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Summary</div>
+        <p class="mb-2">
+            I am a technology strategist, innovator, and mentor who loves to solve complex technical
+            challenges and lead organizations and teams in creating efficient, high quality, easy to use and
+            maintain technology-based solutions. I am an experienced leader, team builder, and motivator who
+            combines the technical expertise of a software architect with the business and management acumen
+            of a C-level executive.
+        </p>
+        <p class="mb-2">
+            I optimize return on investment by recommending short and long term technology strategies and
+            leading their implementation in teams and companies of all sizes, specializing in streamlining
+            software development teams and processes while improving their productivity. Although focused on
+            leadership I maintain proficiency in almost 20 programming languages and numerous software
+            platforms and technologies, including cross-platform development and Cloud-based implementations
+            and migrations.
+        </p>
+        <p class="mb-2">
+            I am currently looking for a long-term Software Engineering leadership role at an organization
+            that values innovation, openness, productivity, efficiency, high quality, and sustainability, and
+            is somewhere that I can contribute significantly, continue to learn and grow, and help others
+            learn and grow along with me.
+        </p>
+    </div>
 
-  <div class="time-line-container grid gap-4 mb-10">
-    <TimeLineElement
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Experience</div>
+    </div>
+
+    <div class="time-line-container mb-10">
+        <TimeLineElement
+            title="VP, Software Engineering"
+            subtitle="From November 2022 to November 2024 , Overland Park, KS, USA"
+        >
+            <ul>
+                <li>
+                    Drove the evaluation and adoption of new and cutting-edge technologies, tools, and
+                    techniques to deliver rapid development of feature requests, frequent high-quality
+                    deliverables, reliable and efficient applications and services, and high customer
+                    satisfaction.
+                </li>
+                <li>
+                    Provided leadership, guidance and mentoring as I grew the software development
+                    organization from 8 to 30+ engineers building containerized .NET, JVM, and NodeJS
+                    applications, services, and automated test suites on AWS in C#, Java, Typescript,
+                    JavaScript, and Python.
+                </li>
+                Worked closely with the IT Ops teams in implementing Infrastructure as Code and automation pipelines
+                to help ensure maximum reliability and performance across all products and services. Worked closely
+                with the Security and Compliance teams to help ensure a best-in-class security posture across all
+                products and services. Participated in Business Development, Acquisition, Client Success, and Client
+                On-boarding efforts across the company.
+            </ul>
+        </TimeLineElement>
+        <TimeLineElement
+            title="Job Title at Project or Company Name"
+            subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+        >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </TimeLineElement>
+        <TimeLineElement
+            title="Job Title at Project or Company Name"
+            subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
+        >
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
+        </TimeLineElement>
+    </div>
+
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Education</div>
+    </div>
+
+    <div class="time-line-container mb-10 grid gap-4">
+        <TimeLineElement
+            title="Imperial College of Science and Technology, London, UK"
+            subtitle="BSc Eng. (Hons) in Computer Science."
+        />
+        <!-- <TimeLineElement
       title="Title Name"
       subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-    <TimeLineElement
-      title="Title Name"
-      subtitle="[start year] to [end year] at [Study Center Name], [City], [Country]"
-    />
-  </div>
+    /> -->
+    </div>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Experience</div>
-  </div>
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Certifications</div>
+    </div>
 
-  <div class="time-line-container mb-10">
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-    <TimeLineElement
-      title="Job Title at Project or Company Name"
-      subtitle="From [Start Date] to [End Date] at [Company], [City], [Country]"
-    >
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-    </TimeLineElement>
-  </div>
+    <ul class="mx-6 mb-10 grid list-disc gap-2">
+        <li>
+            <a href="#" target="_blank"> Certification Name (with link)</a>
+        </li>
+        <li>
+            <a href="#" target="_blank"> Certification Name (with link)</a>
+        </li>
+    </ul>
 
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Certifications</div>
-  </div>
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Skills</div>
+    </div>
 
-  <ul class="list-disc mx-6 mb-10 grid gap-2">
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-    <li>
-      <a href="#" target="_blank"> Certification Name (with link)</a>
-    </li>
-  </ul>
-
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Skills</div>
-  </div>
-
-  <ul class="list-disc md:columns-5 columns-2 mx-6">
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-    <li>Skill Name</li>
-  </ul>
+    <ul class="mx-6 list-disc columns-2 md:columns-5">
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+        <li>Skill Name</li>
+    </ul>
 </BaseLayout>
