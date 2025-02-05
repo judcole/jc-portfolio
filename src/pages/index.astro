@@ -1,4 +1,8 @@
 ---
+// 02/04/25     Jud Cole Portfolio Resume page
+
+// spell-checker: ignore FOSS NAEP NCES
+
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
@@ -12,29 +16,98 @@ const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-    <div class="mt-5 pb-12">
-        <div class="py-1 text-xl">Hey there 👋</div>
-        <div class="text-5xl font-bold">I'm Jud Cole</div>
-        <div class="py-3 text-3xl font-bold">Software Engineer and Entrepreneur</div>
+    <div class="mb-2 mt-5">
+        <!-- <div class="py-1 text-xl">Welcome</div> -->
+        <div class="text-4xl font-bold">Jud Cole</div>
+        <div class="py-3 text-3xl font-bold">Technology Leader, Strategist, Innovator, and Mentor</div>
         <div class="py-2">
             <text class="text-lg">
-                This is my Portfolio site, built with <b>Astro</b>
+                This is my personal portfolio site, built with the amazing
+                <a href="https://astro.build/" target="_blank" class="font-bold">Astro</a>.
             </text>
         </div>
-        <div class="mt-8">
-            <a class="btn" href="https://www.linkedin.com/in/judcole" target="_blank">Connect on LinkedIn</a>
-            <a href="https://www.judcole.com" target="_blank" class="btn btn-outline ml-5">Web site</a>
-        </div>
+
+        <!-- <div class="mt-6">
+            <a class="btn" href="https://www.linkedin.com/in/judcole" target="_blank"
+                >Connect with me on LinkedIn</a
+            >
+            <a href="https://www.judcole.com" target="_blank" class="btn btn-outline ml-5"
+                >My personal Web site</a
+            >
+        </div> -->
     </div>
 
-    <div>
+    <div class="w-full text-3xl font-bold">Summary</div>
+
+    <div class="py-2">
+        <text class="text-lg">
+            <p class="mb-2 text-justify">
+                I am an experienced technology leader, innovator, strategist, and mentor who loves to solve
+                complex technical challenges and lead organizations and teams in creating efficient, high
+                quality, and easy to use and maintain technology-based solutions.
+            </p>
+            <p class="mb-2 text-justify">
+                I am repeatedly recognized as a leader, team builder, and motivator who combines the technical
+                expertise of a software architect with the business and management acumen of a C-level
+                executive.
+            </p>
+            <ul class="mx-6 mb-4 mt-4 grid list-disc gap-2 text-justify">
+                <li>
+                    <span class="font-bold">
+                        Transformation of business challenges into reliable and scalable solutions:
+                    </span>
+                    Innovative creator of technology- based strategies and solutions that provide optimal value
+                    for an organization and its customers.
+                </li>
+                <li>
+                    <span class="font-bold"> Visionary and inspirational IT leadership:</span>
+                    Enthusiastic driver of organizational, team and personal evolution through team building, empowerment,
+                    and mentoring to create a culture of success and achievement.
+                </li>
+                <li>
+                    <span class="font-bold"> Exceptional results exceeding expectations: </span>
+                    Committed goal- and result-oriented pioneer of cutting-edge techniques and technologies to
+                    enhance operational efficiency, reliability and profitability while reducing associated risk.
+                </li>
+                <li>
+                    <span class="font-bold"> Clear communication:</span> Skilled speaker and writer with international
+                    and multi-cultural experience in business development, proposal writing, product briefing,
+                    public speaking, training, and authoring technical manuals.
+                </li>
+                <li>
+                    <span class="font-bold"> Far reaching technical expertise:</span>
+                    Knowledgeable problem solver and builder of technical solutions for Cloud (AWS, Azure, GCP),
+                    Mobile (Android, iOS), Web, Desktop (Windows, Linux, macOS), and Virtual (Docker, VMware, VirtualBox,
+                    Xen) platforms and environments.
+                </li>
+                <!-- <li>
+                    SPEARHEADING SUCCESS Founded and led a self-funding and profitable technology startup that
+                    grew to 25+ people in 3 locations in the USA and the UK, supporting over 50,000 paying
+                    customers throughout the world. Built and led the team that designed and delivered on
+                    schedule the tablet-based assessment system pilot for the National Assessment of
+                    Educational Progress (NAEP) Technology Based Assessment that was administered to over
+                    130,000 students across the U.S. in early 2015. Created multiple commercial software
+                    development tools purchased by over 75,000 developers and 10,000 companies around the
+                    world. Led technical efforts for the winning proposal for a $64 million technology
+                    contract with the National Center for Educational Statistics (NCES).
+                </li> -->
+            </ul>
+            <p class="mb-2 text-justify">
+                As a self-motivated and internationally experienced technology leader and innovator I am
+                looking for an organization that values innovation, openness, productivity, efficiency, high
+                quality, and sustainability and I look forward to leveraging my unique skill set as a key
+                strategic contributor to your company's leadership team.
+            </p>
+        </text>
+    </div>
+    <!-- <div>
         <div class="mb-2 w-full text-3xl font-bold">My last projects {"</>"}</div>
     </div>
 
     <HorizontalCard
         title="Demo Project 1"
         img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        desc="."
         url="#"
         badge="NEW"
     />
@@ -42,21 +115,19 @@ const last_posts = posts.slice(0, 3);
     <HorizontalCard
         title="Demo Project 2"
         img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        desc="."
         url="#"
     />
     <div class="divider my-0"></div>
     <HorizontalCard
         title="Demo Project 3"
         img="/post_img.webp"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        desc="."
         url="#"
         badge="FOSS"
-    />
+    /> -->
 
-    <div>
-        <div class="mb-5 mt-10 w-full text-3xl font-bold">Latest from blog</div>
-    </div>
+    <div class="mb-5 mt-5 w-full text-3xl font-bold">My latest blog posts</div>
 
     {
         last_posts.map((post) => (

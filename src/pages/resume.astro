@@ -1,0 +1,413 @@
+---
+// 02/04/25     Jud Cole Portfolio Resume page
+
+// spell-checker: ignore architecting centreville CMMI cordova dsar fargate fips karrass
+// spell-checker: ignore myparadigm NAEP NCES propio SDLC tascet wholefoodsmarket
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+import TimeLineElement from "../components/resume/TimeLine.astro";
+---
+
+<BaseLayout title="Resume" sideBarActiveItemID="resume">
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Summary</div>
+    </div>
+
+    <div class="mb-5 text-justify">
+        <p class="mb-2">
+            I am an experienced technology leader, innovator, strategist, and mentor who loves to solve
+            complex technical challenges and lead organizations and teams in creating efficient, high quality,
+            and easy to use and maintain technology-based solutions.
+        </p>
+        <p class="mb-2">
+            I am repeatedly recognized as a leader, team builder, and motivator who combines the technical
+            expertise of a software architect with the business and management acumen of a C-level executive.
+        </p>
+        <p class="mb-2">
+            I optimize return on investment by recommending short and long term technology strategies and
+            leading their implementation in teams and companies of all sizes, specializing in streamlining
+            software development teams and processes while improving their productivity.
+        </p>
+        <p class="mb-2">
+            Although focused on leadership I maintain proficiency in almost 20 programming languages and
+            numerous software platforms and technologies, including cross-platform development and Cloud-based
+            implementations and migrations.
+        </p>
+        <p class="mb-2">
+            I am currently looking for a long-term Software Engineering leadership role at an organization
+            that values innovation, openness, productivity, efficiency, high quality, and sustainability, and
+            is somewhere that I can contribute significantly, continue to learn and grow, and help others
+            learn and grow along with me.
+        </p>
+    </div>
+
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Skills</div>
+    </div>
+
+    <ul class="mx-6 mb-5 list-disc columns-2 md:columns-5">
+        <li>Leadership</li>
+        <li>Innovation</li>
+        <li>Mentoring</li>
+        <li>Strategy</li>
+        <li>Agile Development</li>
+        <li>Management</li>
+        <li>Team Building</li>
+        <li>DevOps</li>
+        <li>SaaS and PaaS</li>
+        <li>Cloud Computing</li>
+    </ul>
+
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Experience</div>
+    </div>
+
+    <div class="time-line-container mb-10 grid gap-4">
+        <TimeLineElement
+            company="Propio Language Services"
+            link="https://www.propio.com"
+            subtitle="Nov 2022 to Nov 2024. Overland Park, KS, USA"
+            title="VP, Software Engineering"
+        >
+            <p class="mb-2 text-justify">
+                Led, built, and mentored the company's Software Engineering (Development, DevOps, and Quality
+                Assurance) teams and their practices, processes, and direction. Worked closely with company
+                leadership and other stakeholders to define, plan, and implement the company's software
+                strategy and roadmap.
+            </p>
+            <ul class="mx-6 grid list-disc gap-2 text-justify">
+                <li>
+                    Drove the evaluation and adoption of new and cutting-edge technologies, tools, and
+                    techniques to deliver rapid development of feature requests, frequent high-quality
+                    deliverables, reliable and efficient applications and services, and high customer
+                    satisfaction.
+                </li><li>
+                    Provided leadership, guidance and mentoring as I grew the software development
+                    organization from 8 to 30+ engineers building containerized .NET, JVM, and NodeJS
+                    applications, services, and automated test suites on AWS in C#, Java, Typescript,
+                    JavaScript, and Python.
+                </li><li>
+                    Worked closely with the IT Ops teams in implementing Infrastructure as Code and automation
+                    pipelines to help ensure maximum reliability and performance across all products and
+                    services.
+                </li><li>
+                    Worked closely with the Security and Compliance teams to help ensure a best-in-class
+                    security posture across all products and services.
+                </li><li>
+                    Participated in Business Development, Acquisition, Client Success, and Client On-boarding
+                    efforts across the company.
+                </li>
+            </ul>
+        </TimeLineElement>
+        <TimeLineElement
+            company="Amazon"
+            link="https://www.amazon.com"
+            subtitle="Nov 2020 to Aug 2022. Austin, TX, USA"
+            title="Principle Industry Specialist"
+        >
+            <p class="mb-2 text-justify">
+                Helped lead and drive the automation and optimization of the worldwide Privacy and Compliance
+                efforts of the Amazon Privacy team by implementing, executing, and monitoring Privacy by
+                Design principles, policies and practices.
+            </p>
+            <ul class="mx-6 grid list-disc gap-2 text-justify">
+                <li>
+                    Worked with software development teams, financial teams, legal teams, and privacy and
+                    security specialists across Amazon to define and build automated solutions using both
+                    internal and external tools and technologies.
+                </li><li>
+                    The key technical partner in successfully achieving the CDO Privacy 2021 S-Team (highest
+                    level leadership) goal to perform privacy reviews on 600+ high priority services and
+                    onboard them to our DSAR and Deletion systems.
+                </li><li>
+                    Focused on automation and scalability of privacy auditing and compliance testing tools and
+                    their integration with existing security and privacy systems handling DSAR and Data
+                    Deletion requests.
+                </li><li>
+                    Built the infrastructure and a framework for the automated preparation and distribution of
+                    code reviews for privacy-related issues using the AWS CDK and open source and commercial
+                    tools such as CodeGuru and PMD.
+                </li><li>
+                    Drove privacy and security policy adoption measurement and monitoring, roadmap
+                    coordination and integration across multiple development teams, risk assessment, gap
+                    analysis, and remediation planning.
+                </li><li>
+                    Trained and mentored both internal and contract hires on Amazon privacy and security
+                    tools, processes and practices.
+                </li>
+            </ul>
+        </TimeLineElement>
+        <TimeLineElement
+            company="Code Healer Group"
+            link="https://www.codehealergroup.com"
+            subtitle="Jul 2018 to Nov 2020. Austin, TX, USA"
+            title="VP, Software Engineering"
+        >
+            <p class="mb-2 text-justify">
+                Returned to Code Healer Group to provide expert software architecture, development, security,
+                management, and leadership consulting services to its clients. Key client contracts:
+            </p>
+            <ul class="mx-6 mb-2 grid list-disc gap-2 text-justify">
+                <li>
+                    Hospital for Special Surgery, New York, NY, USA www.hss.edu U.S. #1 in orthopedics 11
+                    years in a row.
+                </li><li>
+                    Whole Foods Market, Austin, TX, USA www.wholefoodsmarket.com The world's leader in natural
+                    and organic foods.
+                </li><li>
+                    Paradigm, Madison, WI, USA www.myparadigm.com Leading technology and services provider for
+                    the building products industry.
+                </li>
+            </ul>
+            General activities:
+            <ul class="mx-6 mt-2 grid list-disc gap-2 text-justify">
+                <li>
+                    Leading and participating in the implementation of local and cloud-based DevOps
+                    infrastructure using automation and virtualization tools such as Ansible, CloudFormation,
+                    Consul, DataDog, Docker, Jenkins, Packer, Portainer, Terraform, Vagrant, Vault,
+                    VirtualBox, and VMware.
+                </li><li>
+                    Architecting and building Hybrid High Availability Multi-Tier applications in Scala, Java,
+                    C#, Python and JavaScript deployed to AWS Fargate, EC2 and RDS instances, Glue and Lambda
+                    jobs, KMS, S3, Secrets Manager, and other AWS services using CloudFormation templates,
+                    PowerShell, and the AWS CLI.
+                </li><li>
+                    Driving architecture and participating in the implementation of enhanced security policies
+                    and practices across Cloud-based applications and systems.
+                </li><li>
+                    Leading and participating in the implementation of Agile and Scrum driven practices using
+                    tools such as GitLab, Atlassian Jira and Confluence for project management, and Jenkins
+                    for continuous integration and automated testing and deployment.
+                </li><li>
+                    Consulting with customers and partners on Cloud Migration and Multi-Cloud strategies and
+                    implementing Agile, DevSecOps, Infrastructure as Code (IaC), PaaS, SaaS, and IaaS
+                    principles for the AWS, Azure and GCP platforms.
+                </li>
+            </ul>
+        </TimeLineElement>
+        <TimeLineElement
+            company="TASCET"
+            link="https://www.tascet.com"
+            subtitle="Apr 2016 to Jul 2018. Madison, WI, USA"
+            title="Chief Technology Officer (CTO)"
+        >
+            <p class="mb-2 text-justify">
+                Led and drove the strategic technical direction and architectural vision of the company.
+                Responsible for the design and implementation of the TASCET identity resolution
+                infrastructure, as well as solutions delivery and technology operations management.
+            </p>
+            <ul class="mx-6 grid list-disc gap-2 text-justify">
+                <li>
+                    Built the company’s mobile, enterprise strength, FIPS and HIPAA compliant, secure,
+                    scalable, cloud based software solution and overseeing its deployment in vertical markets
+                    such as healthcare, banking and retail.
+                </li><li>
+                    Managed and mentored the technical team coding applications in Java, Objective C, Spring,
+                    Python, JavaScript, CSS and HTML to run on Apache Tomcat servers and MySQL / MariaDB / SQL
+                    Server databases in Docker containers on CentOS servers in Amazon AWS VPC clouds.
+                </li><li>
+                    Implemented comprehensive DevOps-based infrastructure using automation and virtualization
+                    tools such as Ansible, Chef, Docker, Jenkins, Kubernetes, Packer, Puppet, Vagrant,
+                    VirtualBox, and VMware.
+                </li><li>
+                    Led the implementation of Agile Development and Deployment practices and tools, enabling
+                    rapid development of feature requests, frequent high quality deliverables and high
+                    customer satisfaction.
+                </li>
+            </ul>
+        </TimeLineElement>
+        <TimeLineElement
+            company="Baton"
+            link="http://www.batonmed.com/"
+            subtitle="Jan 2015 to Mar 2016. Baltimore, MD, USA"
+            title="Chief Technology Officer (CTO)"
+        >
+            <p class="mb-2 text-justify">
+                One of 4 co-founders of Baton. Led all aspects of the technology practices and strategy of the
+                company. Provided technical leadership, guidance, and mentoring as I led and actively
+                participated in the design, implementation and deployment of a system enabling aggregation and
+                updating of patient care information in real time by the care team.
+            </p>
+            <ul class="mx-6 grid list-disc gap-2 text-justify">
+                <li>
+                    Built the company's mobile, enterprise strength, HIPAA compliant, secure, scalable, cloud
+                    based software solution, and oversaw its successful deployment at a number of major East
+                    Coast hospitals.
+                </li><li>
+                    Architected and coded in Groovy, Grails, Java, Objective C, Python, JavaScript, CSS and
+                    HTML to run on Apache Tomcat servers and MySQL / MariaDB / SQL Server databases on Ubuntu
+                    servers in Amazon AWS VPC clouds.
+                </li><li>
+                    Implemented comprehensive DevOps-based infrastructure using automation and virtualization
+                    tools that include Ansible, Chef, Packer, Puppet, Vagrant, VirtualBox, and VMware.
+                </li><li>
+                    Attended and graduated from the DreamIT Health Baltimore 2015 startup incubator as one of
+                    only six companies that were selected from a list of more than a hundred national and
+                    international applicants.
+                </li><li>
+                    Led the successful implementation of Agile Development and Deployment practices and tools,
+                    enabling rapid development of feature requests, frequent high quality deliverables and
+                    high customer satisfaction.
+                </li>
+            </ul>
+        </TimeLineElement>
+        <TimeLineElement
+            company="Fulcrum"
+            link="https://www.fulcrumco.com"
+            subtitle="Aug 2010 to Oct 2014. Centreville, VA, USA"
+            title="Director of Software Development"
+        >
+            <p class="mb-2 text-justify">
+                Led the software development practices, strategy and direction of the company's Civilian
+                division. Provided technical leadership, guidance and mentoring across teams, projects and
+                contracts, and drove the evaluation and adoption of new and cutting-edge technologies, tools
+                and techniques. Actively participated in Business Development efforts across the company.
+            </p>
+            <ul class="mx-6 grid list-disc gap-2 text-justify">
+                <li>
+                    Led technical efforts for the winning proposal for the company's largest contract, the $64
+                    million technology contract with the National Center for Educational Statistics (NCES).
+                </li><li>
+                    Built and led the team that designed and delivered on schedule the tablet-based assessment
+                    system for the National Assessment of Educational Progress (NAEP) Technology Based
+                    Assessment piloted in 200 schools in 2014, and administered to over 130,000 students
+                    across the U.S. in 2015.
+                </li><li>
+                    Architected and coded in C#, Java, HTML, Python, JavaScript and CSS built on a Microsoft
+                    stack of ASP.NET, MVC, IIS and SQL Server and a mobile stack of Cordova using Angular,
+                    Bootstrap, jQuery and other JS frameworks.
+                </li><li>
+                    Led and participated in teams developing applications in Unity 3D, having personally built
+                    the first application from scratch in C# and architected a shared framework library on
+                    which the other applications were built.
+                </li><li>
+                    Led the successful implementation of Agile Development and CMMI-Dev practices and tools in
+                    multiple teams and projects across the company, significantly increasing customer
+                    satisfaction and the quality of deliverables.
+                </li><li>
+                    Led technical efforts for the winning proposal for the company's largest contract, a $64
+                    million technology contract with the National Center for Educational Statistics (NCES).
+                </li>
+            </ul>
+        </TimeLineElement>
+        <TimeLineElement
+            company="Chesapeake Capital Corporation"
+            link="https://www.codehealergroup.com"
+            subtitle="May 2007 to Jul 2010. Richmond, VA, USA."
+            title="Software Architect"
+        >
+            <p class="mb-2 text-justify">
+                Led all aspects of the in-house and outsourced IT software development, including systems and
+                software development architecture, standards and quality control, and hiring, training and
+                managing of in-house and outsourced staff. Reported directly to the Chief Operating Officer.
+            </p>
+            <ul class="mx-6 grid list-disc gap-2 text-justify">
+                <li>
+                    Transformed the disparate IT software development efforts into a scalable and reliable,
+                    enterprise-ready, suite of software applications and development and operating
+                    environments.
+                </li><li>
+                    Architected and coded in C#, Visual Basic, HTML, PHP, Python, JavaScript and CSS on a
+                    Microsoft stack of ASP.NET, MVC, IIS and SQL Server.
+                </li><li>
+                    Championed and led the introduction and successfully implementation of formal SDLC, coding
+                    and testing standards, techniques and processes, and a range of automated build and
+                    deployment tools.
+                </li><li>Led and oversaw the in-house and outsourced software development teams.</li><li>
+                    Pioneered the use of virtualized Development, Test and QA environments isolated from
+                    production.
+                </li>
+            </ul>
+        </TimeLineElement>
+        <TimeLineElement
+            company="Code Healer Group"
+            link="https://www.codehealergroup.com"
+            subtitle="Dec 1999 to Apr 2007. Richmond, VA, USA"
+            title="Chief Technology Officer (CTO)"
+        >
+            <p class="mb-2 text-justify">
+                Co-founded Code Healer Group to build software development tools that improved the quality and
+                performance of software developers' source code. Led the management and implementation of all
+                technology related aspects of the company strategy and direction, and co-architected its
+                business strategy.
+            </p>
+            <ul class="mx-6 grid list-disc gap-2">
+                <li>
+                    Led the creation and development of commercial software development tools such as
+                    CodeHealer, a source code analysis and verification tool used by developers around the
+                    globe.
+                </li><li>
+                    Architected and coded in Java, C#, Object Pascal, Assembler, HTML, JavaScript, CSS and
+                    others on a variety of technologies and operating systems that included Apple, Borland,
+                    Microsoft and other open source software.
+                </li><li>
+                    Liaised with customers, partners, vendors, and distributors to maximize the knowledge,
+                    information and viewpoints on which strategy and implementation decisions were made.
+                </li><li>
+                    Oversaw software development consulting, troubleshooting and training services.
+                </li><li>
+                    Administrator for DUnit, an Open Source unit testing tool for Delphi with more than 10,000
+                    regular users.
+                </li><li>
+                    Presented at software development conferences and user groups across North America and
+                    Europe.
+                </li>
+            </ul>
+        </TimeLineElement>
+        <!--<TimeLineElement
+            company="Code Healer Group"
+            link="https://www.codehealergroup.com"
+            subtitle="Jul 2018 to Nov 2020. Austin, TX"
+            title="VP, Software Engineering"
+        >
+        <p class="mb-2 text-justify">
+        </p>            
+            <ul class="mx-6 grid list-disc gap-2 text-justify">
+                <li>
+                </li><li>
+                </li><li>
+                </li><li>
+                </li><li>
+                </li>
+            </ul>
+        </TimeLineElement> -->
+        <TimeLineElement title="Other adventures" />
+    </div>
+
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Education</div>
+    </div>
+
+    <div class="time-line-container mb-10 grid gap-4">
+        <TimeLineElement
+            title="Imperial College of Science and Technology"
+            subtitle="BSc Eng. (Hons) in Computer Science. London, UK"
+        />
+    </div>
+
+    <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Other Achievements</div>
+    </div>
+
+    <ul class="mx-6 mb-10 grid list-disc gap-2">
+        <li>Tested into Mensa (High IQ Society)</li>
+        <li>Ran the Johannesburg Marathon</li>
+        <li>Lived and worked on 4 continents</li>
+        <li>Graduated IBM Sales School</li>
+        <li>Completed Karrass Effective Negotiating course</li>
+        <li>Attained US Public Trust security clearance</li>
+    </ul>
+
+    <!-- <div class="mb-5">
+        <div class="w-full text-3xl font-bold">Certifications</div>
+    </div>
+
+    <ul class="mx-6 mb-10 grid list-disc gap-2">
+        <li>
+            <a href="#" target="_blank"> Certification Name (with link)</a>
+        </li>
+        <li>
+            <a href="#" target="_blank"> Certification Name (with link)</a>
+        </li>
+    </ul> -->
+</BaseLayout>
