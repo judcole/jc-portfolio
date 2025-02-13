@@ -1,5 +1,5 @@
 ---
-// 02/04/25     Jud Cole Portfolio Base Layout
+// 02/13/25     Jud Cole Portfolio Base Layout
 
 // spell-checker: ignore lofi
 
@@ -30,7 +30,24 @@ const {
     <head>
         <BaseHead title={title} description={description} image={image} , ogType={ogType} />
         {TRANSITION_API && <ClientRouter />}
+        <!-- <script>
+            // Create CheckCSS instance
+            import { CheckCSS } from "checkcss";
+            const checkcss = new CheckCSS();
+
+            // Hook for filtering classnames
+            checkcss.onClassnameDetected = function (classname, element) {
+                // Return `false` to disable checks for `classname`.
+                return /^avatar$|^divider$|^footer$|^hover:scale-\[102%\]$|^hover:shadow-xl$|^lg:drawer-open|^lg:hidden|^md:flex$|^lg:max-w-\[900px\]$|^md:columns-4$|^md:flex-row$|^md:justify-center$|^md:max-w-\[13rem\]$|^menu$|^menu-md$|^social-icons$/.test(
+                    classname,
+                )
+                    ? false
+                    : true;
+            };
+            checkcss.scan().watch();
+        </script> -->
     </head>
+
     <body>
         <div class="drawer bg-base-100 lg:drawer-open">
             <input id="my-drawer" type="checkbox" class="drawer-toggle" />
