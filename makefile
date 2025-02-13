@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-# 02/04/25 Jud Cole Astro portfolio Web site make configuration
+# 02/12/25 Jud Cole Astro portfolio Web site make configuration
 
 HOST_REMOTE := fd-debian-scw
 SITE_LOCAL := build
@@ -24,6 +24,11 @@ help:
 # build: @ Build the Web site
 build: packages
 	${PACKAGER} build
+
+# check: @ Check all source files for errors
+check: packages
+	${PACKAGER} check
+	${PACKAGER} lint
 
 # clean: @ Clean up all generated files
 clean:
@@ -55,10 +60,6 @@ else ifeq ($(PACKAGER), pnpm)
 	@if ! [ $(command -v $(PACKAGER)) ]; then corepack $(PACKAGER) --version; fi
 	@if ! [ $(command -v astro) ]; then ${PACKAGER} install; fi
 endif
-
-# lint: @ Lint check all source files
-lint: packages
-	${PACKAGER} lint
 
 # Dependent packages
 packages: install
