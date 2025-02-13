@@ -6,6 +6,11 @@
         "paths": {
             "@components/*": ["src/components/*"],
             "@layouts/*": ["src/layouts/*"]
-        }
+        },
+        "plugins": [
+            {
+                "name": "@astrojs/ts-plugin"
+            }
+        ]
     }
 }
