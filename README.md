@@ -1,6 +1,6 @@
 # Astrofy | Personal Portfolio Website Template
 
-[//]: # ( spell-checker: ignore Astrofy puppeteerrc )
+[//]: # " spell-checker: ignore Astrofy puppeteerrc "
 
 ![Astrofy | Personal Portfolio Website Template](public/social_img.webp)
 
@@ -309,7 +309,7 @@ Astrofy is licensed under the MIT license — see the [LICENSE](https://github.c
 
 ```html
 <a href="https://github.com/manuelernestog/astrofy/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=manuelernestog/astrofy" alt="Astrofy rocks"/>
+    <img src="https://contrib.rocks/image?repo=manuelernestog/astrofy" alt="Astrofy rocks" />
 </a>
 ```
 
