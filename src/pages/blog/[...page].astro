@@ -12,16 +12,16 @@ export async function getStaticPaths({ paginate }) {
 }
 
 interface Props {
-  page: {
-    data: {
-        length: number,
-        map: (params: (post: any) => any) => string;
-    },
-    url: {
-        next: string;
-        prev: string;
-    }
-  }
+    page: {
+        data: {
+            length: number;
+            map: (params: (post: any) => any) => string;
+        };
+        url: {
+            next: string;
+            prev: string;
+        };
+    };
 }
 
 const { page } = Astro.props;
@@ -34,7 +34,7 @@ const { page } = Astro.props;
 
     {
         page.data.length === 0 ? (
-            <div class="w-full min-w-full border-l-4 border-secondary bg-base-200 p-4">
+            <div class="border-secondary bg-base-200 w-full min-w-full border-l-4 p-4">
                 <p class="font-bold">Sorry!</p>
                 <p>There are no blog posts to show at the moment. Check back later!</p>
             </div>
