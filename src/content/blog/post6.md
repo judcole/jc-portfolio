@@ -1,6 +1,6 @@
 ---
 title: "p-Hacking your A/B tests"
-description: "Essential reading for any product team on how A/B tests can be (and are) misinterpreted."
+description: "Essential reading for any product team - Jason Cohen explains how A/B tests can be (and are) misinterpreted."
 pubDate: "Feb 12 2025"
 heroImage: "/post_img.webp"
 badge: "New"
