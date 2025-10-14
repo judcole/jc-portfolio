@@ -3,7 +3,7 @@ const { sideBarActiveItemID } = Astro.props;
 const activeClass = "bg-base-200"; // For primary color replace with `active` class
 ---
 
-<script type="text/javascript">
+<script is:inline type="text/javascript">
     // <!-- Script to hide address
     function get_em(em) {
         return em + "&#64;jud" + "cole.com";
@@ -29,9 +29,15 @@ const activeClass = "bg-base-200"; // For primary color replace with `active` cl
     <!-- Script to hide address -->
     <script is:inline type="text/javascript">
         var em = get_em("resume");
-        document.writeln('<li><a class="py-3 text-xl" href="' + 
-            "mail" + "to:" + em + '">' + "Email me for a resume" + 
-            "<\/a><\/li>");
+        document.writeln(
+            '<li><a class="py-3 text-xl" href="' +
+                "mail" +
+                "to:" +
+                em +
+                '">' +
+                "Email me for a resume" +
+                "<\/a><\/li>",
+        );
     </script>
 </ul>
 
