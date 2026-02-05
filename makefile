@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 
-# 2026-01-10	Jud Cole Astro portfolio Web site make configuration
+# 2026-01-16	Jud Cole Astro portfolio Web site make configuration
 
 LOCAL_FOLDER := build
 REMOTE_FOLDER := jc-portfolio
@@ -18,8 +18,10 @@ PACKAGER=pnpm
 
 # help: @ List the available make tasks
 help:
+	@echo -e '\nBuild and deploy the Astro portfolio Web site'
+	@echo -e '---------------------------------------------\n'
 	@grep -Eoh '[0-9a-zA-Z_\.\-]+:.*?@ .*' $(MAKEFILE_LIST) | \
-	awk 'BEGIN {FS = ":.*?@ "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}' | sort
+	awk 'BEGIN {FS = ":.*?@ "}; {printf "\033[36m%-12s\033[0m %s\n", $$1, $$2}' | sort
 
 # build: @ Build the Web site
 build: packages

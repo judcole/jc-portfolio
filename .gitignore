@@ -1,6 +1,7 @@
 # build output
 build/
 .cache
+.idea
 # dependencies
 node_modules/
 
