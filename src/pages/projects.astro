@@ -25,6 +25,20 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     </div>
 
     <HorizontalCard
+        title="Jud Cole Portfolio Web Site"
+        img="/project.svg"
+        imgWidth="50"
+        desc="My personal portfolio site (www.judcole.com) crafted in Astro (TypeScript), DasiyUI, and Tailwind CSS based on the Astrofy Template."
+        url="https://github.com/judcole/jc-portfolio"
+    />
+    <HorizontalCard
+        title="Jud Cole Personal GitHub Profile"
+        img="/project.svg"
+        imgWidth="50"
+        desc="My personal GitHub profile site (judcole.github.io) generated from my Portfolio site."
+        url="https://github.com/judcole/judcole.github.io"
+    />
+    <HorizontalCard
         title="Twitter API Coding challenge"
         img="/project.svg"
         imgWidth="50"
@@ -38,5 +52,17 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         imgWidth="50"
         desc="A Java and TypeScript Code Challenge from a few years ago: A Java service to access a Twitter stream API, compute various statistics for the random tweets that it provides, and provide access to the statistics via an HTTPS API call, and a Svelte Web application to display those results on demand by calling the aforementioned API."
         url="https://github.com/judcole/twitter-api-java"
+    />
+
+    <div>
+        <div class="mt-5 mb-5 w-full text-3xl font-bold">Non-Public</div>
+    </div>
+
+    <HorizontalCard
+        title="Web Site Infrastructure"
+        img="/project.svg"
+        imgWidth="50"
+        desc="My personal portfolio site and several other sites are built, hosted, and managed by me on Scaleway Debian hosts running Nomad and Podman for container orchestration, NGINX and Fabio for scaling and load balancing, and Gatus and Bezel for monitoring and alerting. All infrastructure is configured and managed using Terraform and Ansible."
+        url="https://github.com/judcole"
     />
 </BaseLayout>
